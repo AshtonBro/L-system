@@ -219,7 +219,6 @@ function example(i) {
     }
 }
 
-
 /**
  * LSystems root namespace.
  * 
@@ -237,7 +236,6 @@ const POP = ']';
 const COLOUR = 'C';
 
 const RAD = Math.PI / 180.0;
-
 
 /**
  * TurtleRenderer class
