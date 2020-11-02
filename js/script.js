@@ -252,9 +252,9 @@ const RAD = Math.PI / 180.0;
             this._height = height;
         }
 
-        this._colourList = ["rgba(140, 80, 60, 0.75)", "rgba(24, 180, 24, 0.75)", "rgba(48, 220, 48, 0.5)", "rgba(64, 255, 64, 0.5)"];
+        this._colourList = ["rgba(140, 80, 60, 0.75)", "rgb(67, 124, 190)", "rgb(67, 124, 190)"];
         this._constants = [];
-
+        
         return this;
     };
 
@@ -466,14 +466,15 @@ const RAD = Math.PI / 180.0;
 
                 // clear the background 
                 ctx.save();
-                ctx.fillStyle = "rgb(255,255,255)";
+                ctx.fillStyle = "rgb(0,0,0)";
                 ctx.fillRect(0, 0, WIDTH, HEIGHT);
-
+                ctx.shadowColor = "rgb(67, 124, 190)";
+                ctx.shadowBlur = 7;
                 // offset as required
                 ctx.translate(this._xOffset, 0);
 
                 // initial colour if specific colouring not used
-                ctx.strokeStyle = "rgb(0,0,0)";
+                ctx.strokeStyle = "rgb(150,251,0)";
             }
 
             // start at grid 0,0 facing north with no colour index
