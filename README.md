@@ -15,4 +15,4 @@ An L-system or Lindenmayer system is a parallel rewriting system and a type of f
 </p>
 
 ## Run
-Copy repository and run server.
+Copy this repository and run server.
